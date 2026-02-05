@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  docker-build-and-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t kemenkum-bot:ci .
+
+      - name: Run container
+        run: |
+          docker run -d --name bot -p 8000:8000 kemenkum-bot:ci
+          sleep 2
+
+      - name: Smoke test
+        run: curl -f http://127.0.0.1:8000/health
+
+      - name: Cleanup
+        if: always()
+        run: docker rm -f bot
