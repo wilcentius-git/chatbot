@@ -1,0 +1,11 @@
+intent,app,symptom,question_pattern,answer_steps,escalation
+reset_password,SSO,lupa_password,"lupa password sso","1) Buka halaman login SSO. 2) Klik 'Lupa Password'. 3) Masukkan email dinas. 4) Cek inbox/spam untuk tautan reset. 5) Buat password baru sesuai ketentuan.","Jika email reset tidak diterima >10 menit, hubungi helpdesk (sertakan unit kerja + screenshot)."
+reset_password,SSO,password_expired,"password sso expired","1) Login ke SSO. 2) Jika diminta ganti password, masukkan password lama. 3) Buat password baru. 4) Login ulang.","Jika gagal ganti password, hubungi helpdesk."
+login_issue,SSO,akun_terkunci,"akun sso terkunci","1) Tunggu 15 menit (lock sementara). 2) Coba login ulang. 3) Jika lupa password, lakukan reset password.","Jika masih terkunci setelah 15 menit, hubungi helpdesk untuk unlock akun."
+login_issue,SSO,gagal_login,"gagal login sso","1) Pastikan Caps Lock mati. 2) Pastikan username/email benar. 3) Coba login ulang. 4) Jika lupa, reset password.","Jika masih gagal, hubungi helpdesk (sertakan pesan error + waktu kejadian)."
+security,Umum,otp,"tidak menerima otp","1) Pastikan nomor/email aktif. 2) Tunggu 1–2 menit. 3) Klik kirim ulang OTP. 4) Pastikan sinyal/koneksi stabil.","Jika OTP tetap tidak masuk, hubungi helpdesk."
+security,Umum,otp,"bolehkah share otp","OTP bersifat rahasia dan tidak boleh dibagikan kepada siapa pun (termasuk petugas).","Jika OTP sudah terlanjur dibagikan, segera ganti password dan laporkan ke helpdesk."
+reset_password,Email Dinas,lupa_password,"lupa password email dinas","1) Buka portal reset email dinas (jika tersedia). 2) Masukkan alamat email dinas. 3) Ikuti instruksi reset yang dikirim.","Jika tidak ada akses reset mandiri, hubungi helpdesk."
+login_issue,Email Dinas,akun_terkunci,"email dinas terkunci","1) Tunggu 30 menit. 2) Coba login ulang. 3) Pastikan password benar.","Jika tetap terkunci, hubungi helpdesk."
+login_issue,Umum,maintenance,"sso tidak bisa diakses","1) Cek koneksi internet. 2) Coba refresh. 3) Coba lagi 10–15 menit kemudian (kemungkinan pemeliharaan).","Jika gangguan >1 jam, laporkan ke helpdesk."
+security,Umum,phishing,"email reset mencurigakan","Jangan klik tautan mencurigakan. Pastikan domain/sumber resmi. Jika ragu, abaikan dan laporkan.","Laporkan email mencurigakan ke tim IT/security."

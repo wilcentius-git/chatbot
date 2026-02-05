@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kemenkum Bot</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="dot"></div>
+        <div>
+          <div class="title">Kemenkum Bot</div>
+          <div class="subtitle">FAQ + Referensi KUHP (read-only)</div>
+        </div>
+      </div>
+      <button id="btnClear" class="btn ghost" title="Hapus chat">Clear</button>
+    </header>
+
+    <main id="chat" class="chat">
+      <!-- messages injected here -->
+    </main>
+    <div class="quick">
+        <button class="chip" data-msg="akun sso terkunci">Akun terkunci</button>
+        <button class="chip" data-msg="reset password sso">Reset password</button>
+        <button class="chip" data-msg="otp tidak masuk">OTP tidak masuk</button>
+        <button class="chip" data-msg="apa isi Pasal 362 KUHP">Pasal 362 KUHP</button>
+    </div>
+
+    <footer class="composer">
+      <input id="input" class="input" placeholder="Tulis pertanyaan… (contoh: akun sso terkunci / Pasal 362 KUHP)" autocomplete="off" />
+      <button id="btnSend" class="btn primary">Kirim</button>
+    </footer>
+
+    <div id="toast" class="toast hidden"></div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+timestamp,message,intent,matched,score
+2026-02-04T14:23:00,cara reset pass SSO gimana,FAQ,email reset mencurigakan,0.4029548521642537
+2026-02-04T14:23:16,akun sso terkunci,FAQ,akun sso terkunci,1.0000000000000002
+2026-02-04T14:33:31,bagaimana cara buat akun?,FAQ,akun sso terkunci,0.4953604764116969
+2026-02-04T14:33:58,apa itu SSO?,FAQ,lupa password sso,0.33870616168597467
+2026-02-04T14:35:57,apa isi Pasal 362 KUHP??,LEGAL_REF,Pasal 362,
+2026-02-04T14:58:06,akun sso terkunci,FAQ,akun sso terkunci,1.0000000000000002
+2026-02-04T15:09:42,cara reset password gimana?,FAQ,email reset mencurigakan,0.37604550768506556
+2026-02-04T15:10:12,OTP saya tidak bisa masuk,FAQ,sso tidak bisa diakses,0.5951074339016582
+2026-02-04T15:10:20,halo,FAQ,lupa password sso,0.0
+2026-02-04T15:10:24,tes,FAQ,lupa password sso,0.0
+2026-02-04T15:11:10,akun,FAQ,akun sso terkunci,0.4953604764116969
+2026-02-04T15:14:34,tes,FAQ,lupa password sso,0.0
+2026-02-04T15:14:40,otp tidak masuk,FAQ,tidak menerima otp,0.5702030584889749
+2026-02-04T15:16:07,akun sso terkunci,FAQ,akun sso terkunci,1.0000000000000002
+2026-02-04T15:21:54,otp tidak masuk,FAQ,tidak menerima otp,0.5702030584889749
+2026-02-04T15:22:01,tes,FAQ,lupa password sso,0.0
+2026-02-04T15:22:05,otp masuk,FAQ,tidak menerima otp,0.4031944493108637
+2026-02-04T15:56:10,reset password sso,FAQ,lupa password sso,0.572908470315946
+2026-02-04T15:57:09,siapa presiden indonesia,FAQ,lupa password sso,0.0
+2026-02-04T15:57:21,bolehkah share otp?,FAQ,bolehkah share otp,1.0000000000000002
+2026-02-05T08:26:39,tes,FAQ,lupa password sso,0.0
+2026-02-05T08:26:43,reset password,FAQ,email reset mencurigakan,0.37604550768506556
+2026-02-05T08:27:09,akun sso terkunci,FAQ,akun sso terkunci,1.0000000000000002
+2026-02-05T08:27:17,reset password,FAQ,email reset mencurigakan,0.37604550768506556
+2026-02-05T08:27:19,apa isi Pasal 362 KUHP,LEGAL_REF,Pasal 362,

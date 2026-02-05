@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+chatbot/
+.venv/
+.env
+.git/
+app/logs.csv
