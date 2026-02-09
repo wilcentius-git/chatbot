@@ -17,10 +17,28 @@ jobs:
       - name: Run container
         run: |
           docker run -d --name bot -p 8000:8000 kemenkum-bot:ci
-          sleep 2
+          sleep 3
 
-      - name: Smoke test
+      - name: Health check
         run: curl -f http://127.0.0.1:8000/health
+
+      - name: Smoke test FAQ
+        run: |
+          curl -s -X POST http://127.0.0.1:8000/chat \
+            -H "Content-Type: application/json" \
+            -d '{"message":"lupa password sso"}' \
+            | grep -qi "mode\|faq\|eskalasikan\|score"
+
+      - name: Smoke test LEGAL (KUHP)
+        run: |
+          curl -s -X POST http://127.0.0.1:8000/chat \
+            -H "Content-Type: application/json" \
+            -d '{"message":"apa isi pasal 362 kuhp"}' \
+            | grep -qi "pasal 362"
+
+      - name: Show container logs on failure
+        if: failure()
+        run: docker logs bot
 
       - name: Cleanup
         if: always()
